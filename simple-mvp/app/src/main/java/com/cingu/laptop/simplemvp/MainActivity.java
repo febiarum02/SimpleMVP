@@ -67,14 +67,4 @@ public class MainActivity extends AppCompatActivity implements ILoginView, View.
         else
             Toast.makeText(this,"Login Fail, code = " + code,Toast.LENGTH_SHORT).show();
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    public void onSetProgressBarVisibility(int visibility) {
-        progressBar.setVisibility(visibility);
-    }
 }
